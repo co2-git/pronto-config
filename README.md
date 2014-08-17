@@ -28,3 +28,10 @@ app.use(function(req, res) {
 	res.send(app.locals.foo);
 });
 ```
+# Merge
+
+You can pass more than one argument
+
+```js
+pronto().plugin('pronto-config', { foo: 'bar' }, { bar: 'foo '});
+```
